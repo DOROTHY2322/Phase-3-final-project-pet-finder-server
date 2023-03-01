@@ -14,14 +14,11 @@ class ApplicationController < Sinatra::Base
       # Post request to enable a user to add a new pet
   post '/pets' do
     # Parse the data sent in the POST request
-    pet_data = JSON.parse(request.body.read)
-    name = pet_data['name']
-    breed = pet_data['breed']
-    age = pet_data['age']
-
-    # Create a new pet record in the database
-    pet = Pet.create(name: name, breed: breed, age: age)
-
+     pet = Pet.create(
+        name = params[:name],
+        breed = params[:breed],
+        age = params[:age]
+    )
     # Return the details of the newly created pet
     pet.to_json
   end
