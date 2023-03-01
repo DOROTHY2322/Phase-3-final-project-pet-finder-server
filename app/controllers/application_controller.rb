@@ -33,4 +33,15 @@ class ApplicationController < Sinatra::Base
     # Return the details of the available pets
     pets.to_json
   end
+  #search with name or breed
+  get '/pets/search' do
+    # Retrieve the search query from the parameters
+    query = params[:q]
+
+    # Query the database for pets that match the search query
+    pets = Pet.where('name ILIKE ? OR breed ILIKE ?', "%#{query}%", "%#{query}%")
+
+    # Return the details of the matching pets
+    pets.to_json
+  end
 end
