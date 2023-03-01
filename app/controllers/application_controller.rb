@@ -25,4 +25,12 @@ class ApplicationController < Sinatra::Base
     # Return the details of the newly created pet
     pet.to_json
   end
+  #available pets
+  get '/pets/available' do
+    # Retrieve all available pets
+    pets = Pet.where.not(user_id: nil)
+
+    # Return the details of the available pets
+    pets.to_json
+  end
 end
