@@ -1,3 +1,5 @@
+
+require 'pry'
 class ApplicationController < Sinatra::Base
     set default_content_type: "application/json"
   
@@ -12,27 +14,18 @@ class ApplicationController < Sinatra::Base
   
     # Post request to enable a user to add a new pet
     post '/pets' do
-      # Parse the data sent in the POST request
-      pet_data = JSON.parse(request.body.read)
-      name = pet_data['name']
-      breed = pet_data['breed']
-      age = pet_data['age']
-  
-      # Create a new pet record in the database
-      pet = Pet.create(name: name, breed: breed, age: age)
-  
-      # Return the details of the newly created pet
+      binding.pry
+      # create a new pet from the JSON data in the request
+      pet = Pet.create(
+        name: params[:name],
+        breed: params[:breed],
+        user_id: params[:user_id],
+        img_url: params[:img_url]
+      )
       pet.to_json
+
     end
-  
-    #Get request to view the added pets
-    get '/pets' do
-      # Retrieve all pets from the database
-      pets = Pet.all
-  
-      # Return the details of all pets
-      pets.to_json
-    end
+    
   
     #available pets
     get '/pets/available' do
