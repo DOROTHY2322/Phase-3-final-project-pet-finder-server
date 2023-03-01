@@ -44,4 +44,27 @@ class ApplicationController < Sinatra::Base
     # Return the details of the matching pets
     pets.to_json
   end
+   #update the pets
+   put '/pets/:id' do
+    # Retrieve the pet from the database
+    pet = Pet.find_by(id: params[:id])
+
+    # Update the details of the pet
+    pet.update(params.slice(:name, :breed, :age, :description))
+
+    # Return the updated details of the pet
+    pet.to_json
+  end
+
+  #should be able to delete
+  delete '/pets/:id' do
+    # Retrieve the pet from the database
+    pet = Pet.find_by(id: params[:id])
+
+    # Remove the pet from the database
+    pet.destroy
+
+    # Return a success response indicating that the pet has been removed
+    { message: 'The pet has been removed.' }.to_json
+  end
 end
