@@ -47,13 +47,15 @@ class ApplicationController < Sinatra::Base
     get '/pets/search' do
       # Retrieve the search query from the parameters
       query = params[:q]
-  
+    
       # Query the database for pets that match the search query
-      pets = Pet.where('name ILIKE ? OR breed ILIKE ?', "%#{query}%", "%#{query}%")
-  
+      pets = Pet.where('LOWER(name) LIKE ? OR LOWER(breed) LIKE ?', "%#{query.downcase}%", "%#{query.downcase}%")
+
+    
       # Return the details of the matching pets
       pets.to_json
     end
+    
   
     #update the pets
     put '/pets/:id' do
