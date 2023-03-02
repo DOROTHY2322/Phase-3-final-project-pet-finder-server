@@ -2,7 +2,7 @@
 require 'pry'
 class ApplicationController < Sinatra::Base
     set default_content_type: "application/json"
-  
+ 
     #get request to access all the pets
     #GET request to get all the pets
     get '/pets' do
@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   
     # Post request to enable a user to add a new pet
     post '/pets' do
-      binding.pry
+      
       # create a new pet from the JSON data in the request
       pet = Pet.create(
         name: params[:name],
@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
       # Return the details of the available pets
       pets.to_json
     end 
+  
   
     #search with name or breed
     get '/pets/search' do

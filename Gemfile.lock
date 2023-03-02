@@ -96,6 +96,7 @@ GEM
     sinatra-activerecord (2.0.26)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
+    sinatra-cross_origin (0.4.0)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
@@ -128,6 +129,7 @@ DEPENDENCIES
   rspec-json_expectations (~> 2.2)
   sinatra (~> 2.1)
   sinatra-activerecord
+  sinatra-cross_origin
   sqlite3 (~> 1.4)
   unsplash
 
