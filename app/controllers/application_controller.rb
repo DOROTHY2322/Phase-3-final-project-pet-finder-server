@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
   
       # Return the details of the available pets
       pets.to_json
-    end
+    end 
   
     #search with name or breed
     get '/pets/search' do
@@ -51,7 +51,7 @@ class ApplicationController < Sinatra::Base
     
   
     #update the pets
-    put '/pets/:id' do
+    patch '/pets/:id' do
       # Retrieve the pet from the database
       pet = Pet.find_by(id: params[:id])
   

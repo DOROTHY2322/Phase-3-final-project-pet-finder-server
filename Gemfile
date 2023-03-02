@@ -43,6 +43,7 @@ end
 
  gem 'unsplash'
  
+gem 'rack-cors'
 
 # These gems will only be used when we are running tests
 group :test do
