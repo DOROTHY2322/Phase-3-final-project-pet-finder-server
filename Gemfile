@@ -44,8 +44,13 @@ end
  gem 'unsplash'
  
 gem 'rack-cors'
-# Gemfile
+
+
 gem 'sinatra-cross_origin', require: 'sinatra/cross_origin'
+
+gem 'bcrypt'
+
+gem 'rack-session'
 
 
 # These gems will only be used when we are running tests
