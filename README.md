@@ -68,7 +68,7 @@
 
  - Our frontend has a frontend live page to access:
 
-         -  https://phase-3-petfinder-client.vercel.app/
+         -  https://phase-3-petfinder-client.vercel.app
           
 
 # Technologies used
