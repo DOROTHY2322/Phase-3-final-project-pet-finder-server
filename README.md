@@ -47,7 +47,7 @@
 # Project SetUp
 
 - This project is built with Sinatra Api application.
-- To run and acces a server in our Terminall:
+- To run and acces a server in our Terminal:
     
 - Ensure you have a gemfile where all dependencies for or project require to run and install our dependencies
 
