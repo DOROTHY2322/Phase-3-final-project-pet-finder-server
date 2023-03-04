@@ -43,3 +43,32 @@
 - Remember to replace your username when cloning.
 
         - git@github.com:DOROTHY2322/Phase-3-final-project-pet-finder-server.git
+
+# Project SetUp
+
+- This project is built with Sinatra Api application.
+- To run and acces a server in our Terminall:
+    
+- Ensure you have a gemfile where all dependencies for or project require to run and install our dependencies
+
+          - Bundle install
+
+  - To run our server 
+
+            - bundle exec rake server  
+
+# Technologies used
+
+- Ruby
+
+# Authors
+
+- This project was contributed to by:
+
+- DOROTHY JEBET
+
+# License
+- MIT License
+
+- Copyright (c) 2023 DOROTHY2322
+
