@@ -57,6 +57,15 @@
 
             - bundle exec rake server  
 
+  - This project has been rendered in render.com has a live status which we use the given url to fetch data  in our frontend:
+
+            - https://dorothy-sinatra-petfinder.onrender.com   
+
+ - Our frontend has a frontend live page to access:
+
+         -  https://phase-3-petfinder-client.vercel.app/
+          
+
 # Technologies used
 
 - Ruby
