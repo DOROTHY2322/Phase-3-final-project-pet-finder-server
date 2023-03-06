@@ -89,6 +89,9 @@
 
         - ENV['RACK_ENV'] ||= "production"
 
+- Database in both production and development environments
+![Screenshot from 2023-03-06 21-59-46](https://user-images.githubusercontent.com/117739286/223205413-c461ca0a-cac7-4283-85b8-cd7dfb8a0283.png)
+
  - Our frontend has a frontend live page to access:
  
 
