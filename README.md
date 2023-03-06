@@ -75,8 +75,26 @@
  ![Screenshot from 2023-03-06 17-22-36](https://user-images.githubusercontent.com/117739286/223137559-188b6792-9c49-4296-baa5-647916c75317.png)
 
  - Post request to enable a user to add a new pet
-    post '/pets'
+
+    - post '/pets'
+
  ![Screenshot from 2023-03-06 17-29-11](https://user-images.githubusercontent.com/117739286/223138690-6a002747-e4da-4438-9647-295b87067e15.png)
+
+ -  get '/pets/available'
+
+ ![Screenshot from 2023-03-06 17-32-18](https://user-images.githubusercontent.com/117739286/223139954-8ad158b4-6f35-4958-b06b-fa0864cf4f63.png)
+
+ - get '/pets/search'
+
+ ![Screenshot from 2023-03-06 17-34-33](https://user-images.githubusercontent.com/117739286/223140491-b6e97705-3a73-4a70-b611-5d10c9f3c919.png)
+
+ - patch '/pets/:id' 
+
+ ![Screenshot from 2023-03-06 17-36-21](https://user-images.githubusercontent.com/117739286/223141045-c4583e94-8bc4-43a1-bf95-b7a859bbb29f.png)
+
+-  delete '/pets/:id' to remove a pet
+
+ ![Screenshot from 2023-03-06 17-38-30](https://user-images.githubusercontent.com/117739286/223141601-a7ce0e9b-3281-42ef-ba48-6063bdeaf2f1.png)
 # Technologies used
 
 - Ruby
