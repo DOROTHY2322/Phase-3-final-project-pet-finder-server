@@ -95,6 +95,14 @@
 -  delete '/pets/:id' to remove a pet
 
  ![Screenshot from 2023-03-06 17-38-30](https://user-images.githubusercontent.com/117739286/223141601-a7ce0e9b-3281-42ef-ba48-6063bdeaf2f1.png)
+
+ - post '/signup'
+
+ ![Screenshot from 2023-03-06 17-50-42](https://user-images.githubusercontent.com/117739286/223145082-4c208dc4-6021-4a35-a69d-ec64502703f8.png)
+
+
+
+
 # Technologies used
 
 - Ruby
