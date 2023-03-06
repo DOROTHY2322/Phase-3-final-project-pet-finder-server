@@ -70,7 +70,13 @@
 
          -  https://phase-3-petfinder-client.vercel.app
           
+# HTTP Request screenshots
+ - 'get '/pets' request for all the pets 
+ ![Screenshot from 2023-03-06 17-22-36](https://user-images.githubusercontent.com/117739286/223137559-188b6792-9c49-4296-baa5-647916c75317.png)
 
+ - Post request to enable a user to add a new pet
+    post '/pets'
+ ![Screenshot from 2023-03-06 17-29-11](https://user-images.githubusercontent.com/117739286/223138690-6a002747-e4da-4438-9647-295b87067e15.png)
 # Technologies used
 
 - Ruby
