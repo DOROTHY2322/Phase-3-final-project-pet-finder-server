@@ -57,6 +57,25 @@
 
             - bundle exec rake server  
 
+- To create migrations:
+
+         - bundle exec rake db:create_migration NAME=create_users(name of the table)
+
+ -   To run migrations 
+
+         - bundle exec rake db:migrate
+
+- To check on the status of the migrations
+
+        - bundle exec rake db:migrate:status
+
+![Screenshot from 2023-03-06 18-14-25](https://user-images.githubusercontent.com/117739286/223151251-216bb16b-ad6f-40cb-a9a6-0baf64d1a454.png)
+
+- To seed data to the database 
+
+        - bundle exec rake db:seed
+
+
   - This project has been rendered in render.com has a live status which we use the given url to fetch data  in our frontend:
 
             - https://dorothy-sinatra-petfinder.onrender.com   
@@ -66,7 +85,12 @@
 
         - https://github.com/DOROTHY2322/phase--3-petfinder-client
 
+- To deploy our repo we need to change our environment from development to production
+
+        - ENV['RACK_ENV'] ||= "production"
+
  - Our frontend has a frontend live page to access:
+ 
 
          -  https://phase-3-petfinder-client.vercel.app
           
